@@ -1,7 +1,7 @@
 # FROM ubuntu:latest
 FROM python:3.6-slim
 
-LABEL maintainer="Sebastian Zajac <sebastian.zajac@algomine.pl>"
+LABEL maintainer="Sebastian Zajac <sebastian.zajac@sgh.waw.pl>"
 LABEL description="Simpy Flask App"
 
 # RUN apt-get update 
