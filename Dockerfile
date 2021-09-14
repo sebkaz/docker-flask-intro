@@ -1,16 +1,9 @@
-# FROM ubuntu:latest
-FROM python:3.6-slim
+FROM python:alpine3.8
 
 LABEL maintainer="Sebastian Zajac <sebastian.zajac@sgh.waw.pl>"
 LABEL description="Simpy Flask App"
 
-# RUN apt-get update 
-#&& yes | apt-get upgrade
-
-# RUN apt-get install -y python3 python3-pip git 
-
-COPY app.py /app/app.py
-COPY requirements.txt /app/requirements.txt
+COPY . /app/
 
 WORKDIR /app
 
